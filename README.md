@@ -14,6 +14,7 @@ It's useful for scenarios where you want to connect to a different Wi-Fi network
 [sudo ./bjorn-out.sh]
 
 **Version 1.1**
+
 **v1.1 - Enhanced Script (Basic Improvements)**
 
     Added Logging: All connection attempts and results were logged to /var/log/wifi_switcher.log for debugging purposes.
