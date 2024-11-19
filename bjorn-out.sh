@@ -11,7 +11,7 @@
 DEFAULT_SSID="my_wifi"
 DEFAULT_PASSWORD="my_password"
 DEFAULT_INTERFACE="wlan0"
-LOG_FILE="/var/log/wifi_switcher.log"
+LOG_FILE="/var/log/bjorn-out.log"
 
 # Function: Log messages with timestamp
 log_message() {
@@ -70,9 +70,9 @@ fi
 # Cron setup for automated reconnection
 RECONNECT_INTERVAL=20 # in minutes
 if [[ $1 == "--setup-cron" ]]; then
-    CRON_JOB="*/$RECONNECT_INTERVAL * * * * /path/to/wifi_switcher.sh"
+    CRON_JOB="*/$RECONNECT_INTERVAL * * * * /path/to/bjorn-out.sh"
     log_message "Setting up cron job for reconnecting every $RECONNECT_INTERVAL minutes..."
-    (crontab -l 2>/dev/null | grep -v '/path/to/wifi_switcher.sh'; echo "$CRON_JOB") | crontab -
+    (crontab -l 2>/dev/null | grep -v '/path/to/bjorn-out.sh'; echo "$CRON_JOB") | crontab -
     log_message "Cron job set successfully."
     exit 0
 fi
