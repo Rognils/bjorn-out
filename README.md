@@ -13,8 +13,8 @@ It's useful for scenarios where you want to connect to a different Wi-Fi network
 [chmod +x bjorn-out.sh]
 [sudo ./bjorn-out.sh]
 
-Version 1.1
-v1.1 - Enhanced Script (Basic Improvements)
+**Version 1.1**
+**v1.1 - Enhanced Script (Basic Improvements)**
 
     Added Logging: All connection attempts and results were logged to /var/log/wifi_switcher.log for debugging purposes.
     Improved Error Handling:
@@ -23,7 +23,7 @@ v1.1 - Enhanced Script (Basic Improvements)
     Cron Job Example: Provided commented-out lines to integrate with cron for automated reconnection.
     Cleaned Code Structure: Modularized logging for better readability and maintainability.
 
- - Advanced Diagnostics and Automation
+  **Advanced Diagnostics and Automation**
 
     Interface Validation:
         Checked if the specified interface (e.g., wlan0) exists and is managed by NetworkManager. Exits with an error if not found.
