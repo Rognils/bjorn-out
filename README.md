@@ -17,7 +17,7 @@ It's useful for scenarios where you want to connect to a different Wi-Fi network
 
 **v1.1 - Enhanced Script (Basic Improvements)**
 
-    Added Logging: All connection attempts and results were logged to /var/log/wifi_switcher.log for debugging purposes.
+    Added Logging: All connection attempts and results were logged to /var/log/bjorn-out.log for debugging purposes.
     Improved Error Handling:
         Exit with an error if the connection fails.
         More descriptive error messages to assist in troubleshooting.
